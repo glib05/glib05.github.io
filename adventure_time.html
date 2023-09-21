@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+    
+<head>
+    <title>CSS Макет</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .mypage {
+            width: 100vw;
+            height: 100vh;
+
+            font-family: 'Quiqsand', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+
+            display: grid;
+
+            grid-template-columns: 22fr 43fr 24fr;
+            grid-template-rows: 25fr 26fr 26fr 24fr;
+
+            /* grid-template: 1fr 1fr 1fr/50px 1fr 1fr 100px; */
+
+            gap: 0px; /*проміжки*/
+            padding: 10px; /*рамочка для тексту*/
+            box-sizing: border-box;
+        }
+        .mypage div {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: #777;
+            text-align: right;
+            color: white;
+            
+        }
+        .left-hight {
+            background-color: #ccc;
+        }
+        .left-low {
+            background-color: #f1f1f1;
+        }
+        .center {
+            grid-row: 2/4;
+            grid-column: 2/3;
+
+            background-image: url('https://2.bp.blogspot.com/-yMViUy6UPv4/Vw3_s96RUeI/AAAAAAAAAAM/YCTvFOUjYe0dfIyhYmX2oBblz3D-vnX3QCLcB/s1600/Adventure-Time-Investigations-06.jpg');
+            background-position: center center;
+            background-size: contain; 
+            background-repeat: no-repeat;
+        }
+        .right {
+            grid-row: 2/5;
+            grid-column: 3/4;
+
+            background-color: #ccc;
+            
+            font-size: 16px;
+
+            overflow: auto;
+        }
+        .footer {
+            grid-column: 1/3;
+            background-color: #777;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mypage">
+        <div class="header">
+            <header>
+                <h1>Adventure Time</h1>
+            </header>
+        </div>
+        <div class="left-hight">
+            <a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/lab1.html">Головна</a>
+            <ol>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/adventure_time.html">Adventure Time</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/avatar.html">Avatar: The Last Airbender</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/gravity_falls.html">Gravity Falls</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/over_the_gardenwall.html">Over the Garden Wall</a></li>
+            </ol>
+        </div>
+        <div class="left-low">
+            <p>
+                <em>"What is this time?.."</em>
+            </p>
+        </div>
+        <div class="center"></div>
+        <div class="right">
+            <p>
+                <h3><strong>Час пригод(Adventure Time with Finn & Jake)</strong></h3>
+            </p>
+            <p>
+                Події відбуваються переважно в абсурдних (на перший погляд) і яскравих Землях Ууу (англ. Land of Ooo), які є континентом, розділеним на кілька королівств. 
+                В Землях Ууу живуть хлопчик Фін і його зведений брат-пес Джейк, котрі шукають пригоди й рятують жителів королівств від різноманітних небезпек. 
+                Їм допомагають принцеси королівств і фантастичні жителі Земель Ууу, а також здатність Джейка набувати будь-якої форми й сміливість Фіна.
+            </p>
+            <p>
+                Крім Земель Ууу герої подорожують в часі паралельними та уявними світами з їхніми друзями, знаходячи нові пригоди й розкриваючи історію минулого свого 
+                світу. Як з часом з'ясовується, Землі Ууу є частиною планети, постраждалої від Великої Війни Грибів (вірогідно ядерної), яка стала причиною повернення 
+                магії.
+            </p>
+        </div>
+        <div class="footer">
+            <header>
+                <h2>Топові мультсеріали</h2>
+            </header>
+        </div>
+
+    </div>
+</body>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+    
+<head>
+    <title>CSS Макет</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .mypage {
+            width: 100vw;
+            height: 100vh;
+
+            font-family: 'Quiqsand', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+
+            display: grid;
+
+            grid-template-columns: 22fr 43fr 24fr;
+            grid-template-rows: 25fr 26fr 26fr 24fr;
+
+            /* grid-template: 1fr 1fr 1fr/50px 1fr 1fr 100px; */
+
+            gap: 0px; /*проміжки*/
+            padding: 10px; /*рамочка для тексту*/
+            box-sizing: border-box;
+        }
+        .mypage div {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: #777;
+            text-align: right;
+            color: white;
+            
+        }
+        .left-hight {
+            background-color: #ccc;
+        }
+        .left-low {
+            background-color: #f1f1f1;
+        }
+        .center {
+            grid-row: 2/4;
+            grid-column: 2/3;
+
+            background-image: url('https://cdn.vox-cdn.com/thumbor/BgLoE8_QIBXDsv2s7o_njKw3nTQ=/0x0:1920x1080/1400x788/filters:focal(960x540:961x541)/cdn.vox-cdn.com/uploads/chorus_asset/file/24348773/AvatarGenerations___CoverArt___1920x1080.png');
+            background-position: center center;
+            background-size: contain; 
+            background-repeat: no-repeat;
+        }
+        .right {
+            grid-row: 2/5;
+            grid-column: 3/4;
+
+            background-color: #ccc;
+
+            font-size: 16px;
+
+            overflow: auto;
+        }
+        .footer {
+            grid-column: 1/3;
+            background-color: #777;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mypage">
+        <div class="header">
+            <header>
+                <h1>Avatar: The Last Airbender</h1>
+            </header>
+        </div>
+        <div class="left-hight">
+            <a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/lab1.html">Головна</a>
+            <ol>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/adventure_time.html">Adventure Time</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/avatar.html">Avatar: The Last Airbender</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/gravity_falls.html">Gravity Falls</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/over_the_gardenwall.html">Over the Garden Wall</a></li>
+            </ol>
+        </div>
+        <div class="left-low">
+            <p>
+                <em>"Water, Earth, Fire, Air..."</em>
+            </p>
+        </div>
+        <div class="center"></div>
+        <div class="right">
+            <p>
+                <h3><strong>«Авата́р: Оста́нній захисни́к» або «Авата́р: Оста́нній Маг Пові́тря» (від англ. Avatar: The Legend of Aang, англ. Avatar: The Last Airbender) </strong></h3>
+            </p>
+            <p>
+                Дія серіалу відбувається в псевдоазійському світі, сповненому фантастичних тварин, духів і магії.
+            </p>
+            <p>
+                Учень Південного Храму Повітря, 12-річний маг повітря Аанг дізнається, що він є новим втіленням Аватара. Зазвичай процес посвячення відбувається в день 16-ліття, але ченці Повітря розуміють, що світ, що залишився без Аватара, дуже швидко опиниться на порозі війни. Для закінчення його навчання його збираються відправити до Східного Храму Повітря, але Аанг, наляканий своїм призначенням і відповідальністю, що звалилася на нього, тікає на своєму летючому бізонові Аппі. Під час перельоту через океан Аанг потрапляє в шторм і тоне. Але, випадково увійшовши у Стан Аватара, він рятується, заморозивши себе й Аппу. Як і передрікали маги Повітря, після зникнення Аанга, Імперія Вогню почала війну проти інших націй.
+            </p>
+            <p>
+                Серіал починається рівно через 100 років після зникнення Аанга. Війна наближається до кінця. Повітряні кочівники практично знищені, Королівства Землі, окрім міста-держави Ба Сінг Се та острова Кіоши, знаходяться під владою нації Вогню, Племена Води на межі кризи.
+            </p>
+            <p>
+                Катара — маг води-самоучка — та її брат Сокка з Південного Племені Води випадково знаходять і звільняють Аанга й Аппу з айсберга.
+            </p>
+            <p>
+                Аанг незабаром дізнається, що за час його відсутності Імперія Вогню знищила націю повітря і майже захопила весь світ. Як втілення Аватара він зобов'язаний зупинити Імперію Вогню і повернути нації до балансу. Разом зі своїми друзями він подорожує світом, навчаючись магії решти стихій для того, щоби перемогти Володаря Вогню — імператора Імперії Вогню.
+            </p>
+
+        </div>
+        <div class="footer">
+            <header>
+                <h2>Топові мультсеріали</h2>
+            </header>
+        </div>
+
+    </div>
+</body>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+    
+<head>
+    <title>CSS Макет</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .mypage {
+            width: 100vw;
+            height: 100vh;
+
+            font-family: 'Quiqsand', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+
+            display: grid;
+
+            grid-template-columns: 22fr 43fr 24fr;
+            grid-template-rows: 25fr 26fr 26fr 24fr;
+
+            /* grid-template: 1fr 1fr 1fr/50px 1fr 1fr 100px; */
+
+            gap: 0px; /*проміжки*/
+            padding: 10px; /*рамочка для тексту*/
+            box-sizing: border-box;
+        }
+        .mypage div {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: #777;
+            text-align: right;
+            color: white;
+            
+        }
+        .left-hight {
+            background-color: #ccc;
+        }
+        .left-low {
+            background-color: #f1f1f1;
+        }
+        .center {
+            grid-row: 2/4;
+            grid-column: 2/3;
+
+            
+            position: relative; /* Для позиціонування дочірнього елемента */
+            /* background-image: url('https://fictionhorizon.com/wp-content/uploads/2022/04/over-the-garden-wall.webp');
+            background-position: center center;
+            background-size: contain; 
+            background-repeat: no-repeat; */
+        }
+        .right {
+            grid-row: 2/5;
+            grid-column: 3/4;
+
+            background-color: #ccc;
+            
+            font-size: 16px;
+
+            overflow: auto;
+        }
+        .footer {
+            grid-column: 1/3;
+            background-color: #777;
+            color: white;
+        }
+
+        .adventure, .avatar, .gravity, .gardenwall {
+            width: 40%; /* Розмір зображень відносно ширини контейнера */
+            height: auto; /* Автоматична висота для збереження співвідношення сторін */
+            position: absolute;
+            
+        }
+        .adventure {
+            top: 0; /* Вниз контейнера */
+            left: 0; /* Вліво контейнера для першого зображення */
+        }
+
+        .avatar {
+            top: 0; /* Вниз контейнера */
+            right: 0; /* Вправо контейнера для другого зображення */
+        }
+        .gravity {
+            bottom: 0;
+            left: 0;
+        }
+        .gardenwall{
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mypage">
+        <div class="header">
+            <header>
+                <h1>Мультсеріали</h1>
+            </header>
+        </div>
+        <div class="left-hight">
+            <a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/lab1.html">Головна</a>
+            <ol>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/adventure_time.html">Adventure Time</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/avatar.html">Avatar: The Last Airbender</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/gravity_falls.html">Gravity Falls</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/over_the_gardenwall.html">Over the Garden Wall</a></li>
+            </ol>
+        </div>
+        <div class="left-low">
+            <p>
+            Тут ви побачите суб'єктивну оцінку автора щодо найкращих мультсеріалів, створених людством.
+            </p>
+        </div>
+        <div class="center">
+            <map name="adventure-map">
+                <area shape="default" href="https://www.youtube.com/watch?v=kMDaAcfCYow&ab_channel=RedR0ver" alt="Область 1">
+            </map>
+            <map name="avatar-map">
+                <area shape="default" href="https://www.youtube.com/watch?v=ooVvH2IYz0w&ab_channel=HenryPage" alt="Область 2">
+            </map>
+            <map name="gravity-map">
+                <area shape="default" href="https://www.youtube.com/watch?v=yfUDIPUETUg&ab_channel=DisneyChannel" alt="Область 3">
+            </map>
+            <map name="gardenwall-map">
+                <area shape="default" href="https://www.youtube.com/watch?v=OAYo1Q9qVrI&ab_channel=Carter" alt="Область 4">
+            </map>
+
+            <img class="adventure" src="https://logos-world.net/wp-content/uploads/2023/05/Adventure-Time-Logo.png" alt="Adventure time logo" usemap="#adventure-map">
+            <img class="avatar" src="https://logos-world.net/wp-content/uploads/2023/06/Avatar-the-Last-Airbender-Symbol.png" alt="Avatar: the las airbender logo" usemap="#avatar-map">
+            <img class="gravity" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gravity_Falls_logo.svg/2560px-Gravity_Falls_logo.svg.png" alt="gravity falls logo" usemap="#gravity-map">
+            <img class="gardenwall" src="https://static.wikia.nocookie.net/logopedia/images/1/1c/OTGWCNlogo.png/revision/latest/scale-to-width-down/1200?cb=20200324051537" alt="over the garden wall logo" usemap="#gardenwall-map">
+        </div>
+        <div class="right">
+            <p>
+                <h3></h3>
+            </p>
+            <p>
+
+            </p>
+            <p>
+                <h3>Причини по яким варто їх подивитись:</h3>
+            </p>
+            <p>
+                <ul>
+                    <li>Культовий статус: усі ці мультсеріали стали культовими, а отже безсмертними для культури.</li>
+                    <li>Незабутні персонажі: ці мультсеріали мають незабутніх персонажів, які стали іконами поп-культури. Глядачі відчувають зв'язок з цими персонажами і долучаються до їхніх пригод.</li>
+                    <li>Якісні сценарії: ці мультсеріали відрізняються відмінними сценаріями зі спритним поєднанням гумору, драми, філософії та соціальних тем.</li>
+                    <li>Креативний стиль та мистецтво: мультсеріали вражають візуальним стилем, анімацією та музичним супроводом. Вони виглядають унікально та виокремлюються серед інших мультфільмів.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="footer">
+            <header>
+                <h2>Топові мультсеріали</h2>
+            </header>
+        </div>
+
+    </div>
+</body>

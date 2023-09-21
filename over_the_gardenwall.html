@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+    
+<head>
+    <title>CSS Макет</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .mypage {
+            width: 100vw;
+            height: 100vh;
+
+            font-family: 'Quiqsand', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+
+            display: grid;
+
+            grid-template-columns: 22fr 43fr 24fr;
+            grid-template-rows: 25fr 26fr 26fr 24fr;
+
+            /* grid-template: 1fr 1fr 1fr/50px 1fr 1fr 100px; */
+
+            gap: 0px; /*проміжки*/
+            padding: 10px; /*рамочка для тексту*/
+            box-sizing: border-box;
+        }
+        .mypage div {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: #777;
+            text-align: right;
+            color: white;
+            
+        }
+        .left-hight {
+            background-color: #ccc;
+        }
+        .left-low {
+            background-color: #f1f1f1;
+        }
+        .center {
+            grid-row: 2/4;
+            grid-column: 2/3;
+
+            background-image: url('https://fictionhorizon.com/wp-content/uploads/2022/04/over-the-garden-wall.webp');
+            background-position: center center;
+            background-size: contain; 
+            background-repeat: no-repeat;
+        }
+        .right {
+            grid-row: 2/5;
+            grid-column: 3/4;
+
+            background-color: #ccc;
+            
+            font-size: 16px;
+
+            overflow: auto;
+        }
+        .footer {
+            grid-column: 1/3;
+            background-color: #777;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mypage">
+        <div class="header">
+            <header>
+                <h1>Over the Garden Wall</h1>
+            </header>
+        </div>
+        <div class="left-hight">
+            <a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/lab1.html">Головна</a>
+            <ol>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/adventure_time.html">Adventure Time</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/avatar.html">Avatar: The Last Airbender</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/gravity_falls.html">Gravity Falls</a></li>
+                <li><a href="file:///D:/%D0%9A%D0%9F%D0%86/3%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/web/lab1/over_the_gardenwall.html">Over the Garden Wall</a></li>
+            </ol>
+        </div>
+        <div class="left-low">
+            <p>
+                <em>"The world isn't perfect."</em>
+            </p>
+        </div>
+        <div class="center"></div>
+        <div class="right">
+            <p>
+                <h3><strong>«За садовим парканом» (англ. Over the Garden Wall) </strong></h3>
+            </p>
+            <p>
+                Відмінний пригодницький мультфільм, що є неймовірно цікавою сумішшю містичних пригод, іскрометної комедії та символічної драми. 
+            </p>
+            <p>
+                В центрі сюжету – історія двох братів, Вірт та Грег, один з яких занудний підліток-невдаха з комплексами, а інший невиправний оптиміст. Хлопчаки заблукали в лісі, шукають дорогу додому. Мандруючи темним лісом, вони забрідають у його казкову частину, де зустрічають різноманітних та неймовірних персонажів…
+            </p>
+            <p>
+                Міні-серіал «За садовим парканом» (2014) – справжній мультиплікаційний шедевр, який буде цікаво дивитись усім.
+            </p>
+        </div>
+        <div class="footer">
+            <header>
+                <h2>Топові мультсеріали</h2>
+            </header>
+        </div>
+
+    </div>
+</body>
