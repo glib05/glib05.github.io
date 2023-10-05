@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+.mypage {
+    width: 99.999vw;
+    height: 99.999vh;
+
+    font-family: 'Quiqsand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+
+    gap: 0px; /*проміжки*/
+    /* padding: 10px; */
+    /* box-sizing: border-box; */
+}
+/* .mypage div {
+    gap: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+} */
+.header{
+     
+    background-color: #777;
+    text-align: right;
+    color: white;
+
+    flex: 1 1 calc(25%*100/101);
+    /* width: 100%; */
+}
+.body{
+    flex: 1 1 calc(76%*100/101);
+    display: flex;
+}
+.sub_body{
+    flex: 1 1 calc(65%*100/89);
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    flex: 1 1 calc(24%*100/89);
+ 
+    font-size: 16px; 
+    background-color: #ccc;
+    overflow: auto;
+    overflow-y: visible;
+    overflow-x: hidden;
+}   
+.big_center{
+    flex: 1 1 calc(52%*100/76);
+    display: flex;
+}
+.footer{
+    flex: 1 1 calc(24%*100/76);
+
+    background-color: #777;
+    color: white;
+}
+.left{
+    flex: 1 1 calc(22%*100/65);
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    flex: 1 1 calc(43%*100/65);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;  
+    align-items: space-between;
+
+    background-image: url('https://i.kym-cdn.com/photos/images/newsfeed/001/384/532/161.jpg');
+    background-position: center center;
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+.left_hight{
+    flex: 1 1 50%;
+
+    background-color: #ccc;
+}
+.left_low{
+    flex: 1 1 50%;
+
+    background-color: #f1f1f1;
+}
+.center, .footer,.header, .left_hight, .left_low, .right{
+    gap: 0;
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+}
+.big_center, .body, .left, .mypage, .sub_body{
+    box-sizing: border-box;
+}

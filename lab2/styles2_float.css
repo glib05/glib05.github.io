@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+.mypage {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Quiqsand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.mypage div {
+    gap: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.header{
+    background-color: #777;
+    text-align: right;
+    color: white;
+
+    width: 100%;
+    height: calc(25%*100/101);
+}
+.right{
+    font-size: 16px; 
+    background-color: #ccc;
+    overflow: auto;
+
+    float: right;
+
+    width: calc(24%*100/89);
+    height: calc(76%*100/101);
+}   
+.footer{
+    background-color: #777;
+    color: white;
+
+    clear:left;
+
+    width: calc(65%*100/89);
+    height: calc(24%*100/101);
+    
+}
+.center{
+    float: right;
+
+    width: calc(43%*100/89);
+    height: calc(52%*100/101);
+
+    background-image: url('https://media.tenor.com/3SoWzf5M0hQAAAAC/cat-dancing.gif');
+    background-position: center center;
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+.left_hight{
+    background-color: #ccc;
+    overflow: auto;
+
+    float: left;
+
+    width: calc(22%*100/89);
+    height: calc(26%*100/101);
+}
+.left_low{
+    background-color: #f1f1f1;
+    overflow: auto;
+
+    float: left;
+
+    width: calc(22%*100/89);
+    height: calc(26%*100/101);
+}
+
