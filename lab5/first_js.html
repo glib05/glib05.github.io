@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_first_js.css">
+    <title>Lab5</title>
+</head>
+<body>
+    <div class=parent_div>
+        <header>
+                <div class="header-info">
+                    <div class="text-aligner">
+                        <h2 ondblclick="editElement(this)">
+                        </h2>
+                        <div ondblclick="editElement(this)"></div>
+                    </div>
+                </div>
+                
+                <div class="header-logo">
+                    <a class="logo" ondblclick="editElement(this, 72, 'input', 500)">
+                        Jaba Squid
+                    </a>
+                </div>
+        </header>
+        <main class=content_container>
+            <section class="section_left aside-left">
+                <aside class="aside-left-top">
+                    <div>
+                        <h4>Новий колір (наприклад #c7d9f0):</h4>
+                        <div>
+                            <label for="inputColor">Пишіть сюди- - -></label>
+                            <input type="text" id="inputColor">
+                        </div>
+                    </div>
+                </aside>
+                <aside class="aside-left-bottom">
+                    <p ondblclick="editElement(this, 16, 'textarea', 300, '#ebf1dc')">
+                        fatigue fatigue fatigue fatigue fatigue fatigue
+                    </p>
+                </aside>
+            </section>
+
+            <main id="main-content">
+                <div class="content-grid">
+                    <p ondblclick="editElement(this, 18)">Щастя?</p>
+                    <div class="result">
+                        <h4 ondblclick="editElement(this, 18)">Розрахунок площі круга</h4>
+                        <div>
+                            <label for="inputCircleNum" ondblclick="editElement(this, 16)">Введіть число</label>
+                            <input type="number" id="inputCircleNum">
+                        </div>
+                        <button onclick="onClickCircleHandler()">Результат</button>
+                        <div class="resultCircleText"></div>
+                    </div>
+                    <div class="result">
+                        <h4 ondblclick="editElement(this, 18)">Визначення кількості найбільших чисел (9 -3 -1 0 4 9 9 = 3)</h4>
+                        <div>
+                            <label for="inputMaxNum" ondblclick="editElement(this, 16)">Введіть числа (через пробіл)</label>
+                            <input type="text" id="inputMaxNum">
+                        </div>
+                        <button onclick="onClickMaxHandler()">Результат</button>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <span class="logo2" ondblclick="editElement(this, 48, 'input', 300, '#c7d9f0')">
+                    Знов до роботи...
+                </span>
+            </footer>
+        </main>
+        <aside class="aside-right">
+            <nav class="navigation">
+                <a ondblclick="editElement(this, 18)">Кабанчик</a>
+                <a ondblclick="editElement(this, 18)">Пивопий</a>
+                <a ondblclick="editElement(this, 18)">Пес Патрон</a>
+            </nav>
+        </aside>
+    </div>
+    <script src="first_js.js"></script>
+</body>
+</html>
