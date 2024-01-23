@@ -1,7 +1,7 @@
 <?php // Do not put any HTML above this line
 if ( isset($_POST['cancel'] ) ) {
     // Redirect the browser to game.php
-    header("Location: index.html");
+    header("Location: index.php");
     return;
 }
 $salt = 'XyZzy12*_';
@@ -15,7 +15,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
         $check = hash('md5', $salt.$_POST['pass']);
         if ( $check == $stored_hash ) {
             // Redirect the browser to game.php
-            header("Location: game.html?name=".urlencode($_POST['who']));
+            header("Location: game.php?name=".urlencode($_POST['who']));
             return;
         } else {
             $failure = "Incorrect password";
@@ -27,7 +27,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
 <!DOCTYPE html>
 <html>
 <head>
-<?php require_once "bootstrap.html"; ?>
+<?php require_once "bootstrap.php"; ?>
 <title>ІП-24 Новиков Гліб Костянтинович 896a7fb3</title>
 </head>
 <body>
@@ -38,7 +38,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
 // not equals would work here...
 if ( $failure !== false ) {
     // Look closely at the use of single and double quotes
-    echo('<p style="color: red;">'.htmlentities($failure)."</p>\n");
+    echo('<p style="color: red;">'.phpentities($failure)."</p>\n");
 }
 ?>
 <form method="POST">

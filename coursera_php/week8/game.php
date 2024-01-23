@@ -5,7 +5,7 @@ if ( ! isset($_GET['name']) || strlen($_GET['name']) < 1  ) {
 }
 // If the user requested logout go back to index.php
 if ( isset($_POST['logout']) ) {
-    header('Location: index.html');
+    header('Location: index.php');
     return;
 }
 // Set up the values for the game...
@@ -46,7 +46,7 @@ $result = check($computer, $human);
 <html>
 <head>
 <title>ІП-24 Новиков Гліб Костянтинович 896a7fb3</title>
-<?php require_once "bootstrap.html"; ?>
+<?php require_once "bootstrap.php"; ?>
 </head>
 <body>
 <div class="container">
