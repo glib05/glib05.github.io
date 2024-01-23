@@ -1,7 +1,7 @@
 <?php // Do not put any HTML above this line
 if ( isset($_POST['cancel'] ) ) {
     // Redirect the browser to game.php
-    header("Location: index.php");
+    header("Location: index.html");
     return;
 }
 $salt = 'XyZzy12*_';
@@ -15,7 +15,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
         $check = hash('md5', $salt.$_POST['pass']);
         if ( $check == $stored_hash ) {
             // Redirect the browser to game.php
-            header("Location: game.php?name=".urlencode($_POST['who']));
+            header("Location: game.html?name=".urlencode($_POST['who']));
             return;
         } else {
             $failure = "Incorrect password";
@@ -27,7 +27,7 @@ if ( isset($_POST['who']) && isset($_POST['pass']) ) {
 <!DOCTYPE html>
 <html>
 <head>
-<?php require_once "bootstrap.php"; ?>
+<?php require_once "bootstrap.html"; ?>
 <title>ІП-24 Новиков Гліб Костянтинович 896a7fb3</title>
 </head>
 <body>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>ІП-24 Новиков Гліб Костянтинович 896a7fb3</title>
-<?php require_once "bootstrap.php"; ?>
+<?php require_once "bootstrap.html"; ?>
 </head>
 <body>
 <div class="container">
@@ -11,11 +11,11 @@
 partially done and serves only as a starting point for the assignment.
 </p>
 <p>
-<a href="login.php">Please Log In</a>
+<a href="login.html">Please Log In</a>
 </p>
 <p>
 Attempt to go to 
-<a href="game.php">game.php</a> without logging in - it should fail with an error message.
+<a href="game.html">game.html</a> without logging in - it should fail with an error message.
 <p>
 <a href="http://www.wa4e.com/code/rps.zip"
  target="_blank">Source Code for this Application</a>
